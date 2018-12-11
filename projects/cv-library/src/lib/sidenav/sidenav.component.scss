@@ -1,7 +1,7 @@
-// $sidebar-width: 500px;
+// $sidenav-width: 500px;
 $header-border-padding: 0 10px;
 
-.sidebar {
+.sidenav {
     position: fixed;
     left: 0;
     top: 0;
@@ -27,7 +27,7 @@ $header-border-padding: 0 10px;
       font-weight: 700;
     }
   
-    &-body {
+    ::ng-deep &-body {
       text-decoration: none;
       display: flex;
       flex-direction: column;
@@ -36,7 +36,9 @@ $header-border-padding: 0 10px;
       padding-top: 18px;
 
 
-      a {
+      ::ng-deep a {
+        display: flex;
+        flex-direction: column;
         width: 213px;
         margin: 10px 0;
   
@@ -48,41 +50,41 @@ $header-border-padding: 0 10px;
         }
       }
   
-      a:link,
-      a:visited,
-      a:hover {
-        text-decoration: none;
-        color: white;
-      }
+    //   a:link,
+    //   a:visited,
+    //   a:hover {
+    //     text-decoration: none;
+    //     color: white;
+    //   }
   
-      a:active,
-      a:focus {
-        font-weight: bold;
-        font-size: 13px;
-        width: 213px;
-        height: 32px;
-        padding: 16px;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        border-radius: 21px;
-        background-color: #FFFFFF;
-        color: #FF5E00;
-        box-shadow: 2px 6px 16px 0 rgba(39, 48, 68, 0.21);
+    //   a:active,
+    //   a:focus {
+    //     font-weight: bold;
+    //     font-size: 13px;
+    //     width: 213px;
+    //     height: 32px;
+    //     padding: 16px;
+    //     text-decoration: none;
+    //     display: flex;
+    //     align-items: center;
+    //     border-radius: 21px;
+    //     background-color: #FFFFFF;
+    //     color: #FF5E00;
+    //     box-shadow: 2px 6px 16px 0 rgba(39, 48, 68, 0.21);
   
-        i {
-          height: 16px;
-          color: #FC6D19;
-          letter-spacing: 0.56px;
-          line-height: 16px;
-          margin-left: 0;
-          padding-left: 0;
-        }
-      }
+    //     i {
+    //       height: 16px;
+    //       color: #FC6D19;
+    //       letter-spacing: 0.56px;
+    //       line-height: 16px;
+    //       margin-left: 0;
+    //       padding-left: 0;
+    //     }
+    //   }
   
     }
   
-    &-footer {
+    ::ng-deep &-footer {
       display: flex;
       justify-content: center;
       align-items: center;
