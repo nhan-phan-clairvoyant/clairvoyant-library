@@ -133,7 +133,47 @@
           }
         }
       }
+    },
+    "cv-library": {
+      "root": "projects/cv-library",
+      "sourceRoot": "projects/cv-library/src",
+      "projectType": "library",
+      "prefix": "cv",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/cv-library/tsconfig.lib.json",
+            "project": "projects/cv-library/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/cv-library/src/test.ts",
+            "tsConfig": "projects/cv-library/tsconfig.spec.json",
+            "karmaConfig": "projects/cv-library/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/cv-library/tsconfig.lib.json",
+              "projects/cv-library/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
-  "defaultProject": "clairvoyant"
+  "defaultProject": "clairvoyant",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

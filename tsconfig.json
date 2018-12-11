@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "cv-library": [
+        "dist/cv-library"
+      ],
+      "cv-library/*": [
+        "dist/cv-library/*"
+      ]
+    }
   }
 }
