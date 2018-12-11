@@ -1,3 +1,19 @@
-<div>
-  sidenav works!
+<div class="sidebar" ngStyle="{ 'width': width }">
+
+  <span>
+    <div class="sidebar-header header">
+      {{header}}
+    </div>
+    <div class="sidebar-body">
+      <ng-content></ng-content>
+    </div>
+  </span>
+
+  <div class="sidebar-footer">
+    <button>Need help?</button>
+    <a>Version 1.0</a>
+  </div>
+
 </div>
+
+<!-- <cv-button></cv-button> -->

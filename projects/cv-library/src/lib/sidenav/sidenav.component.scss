@@ -1,3 +1,108 @@
-a {
-    color: red;
-}
+// $sidebar-width: 500px;
+$header-border-padding: 0 10px;
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 0.56px;
+    line-height: 16px;
+    text-transform: uppercase;
+    height: 100vh;
+    border-radius: 0 29px 29px 0;
+    background: linear-gradient(to bottom, #FF5E00 0%, #F87D35 100%);
+    box-shadow: 4px 4px 8px 0 rgba(39, 48, 68, 0.11);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $header-border-padding;
+    padding-bottom: 30px;
+    z-index: 1;
+  
+    &-header {
+      font-weight: 700;
+    }
+  
+    &-body {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 18px;
+
+
+      a {
+        width: 213px;
+        margin: 10px 0;
+  
+        i {
+          height: 16px;
+          width: 18px;
+          text-align: center;
+          margin: 5px 12px;
+        }
+      }
+  
+      a:link,
+      a:visited,
+      a:hover {
+        text-decoration: none;
+        color: white;
+      }
+  
+      a:active,
+      a:focus {
+        font-weight: bold;
+        font-size: 13px;
+        width: 213px;
+        height: 32px;
+        padding: 16px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        border-radius: 21px;
+        background-color: #FFFFFF;
+        color: #FF5E00;
+        box-shadow: 2px 6px 16px 0 rgba(39, 48, 68, 0.21);
+  
+        i {
+          height: 16px;
+          color: #FC6D19;
+          letter-spacing: 0.56px;
+          line-height: 16px;
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
+  
+    }
+  
+    &-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-transform: none;
+      font-size: 12px;
+  
+      button {
+        font-size: 14px;
+        font-weight: 300;
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        color: white;
+        height: 32px;
+        width: 212px;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.09);
+        box-shadow: 2px 6px 16px 0 rgba(39, 48, 68, 0.11);
+      }
+    }
+  }

@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { CvLibraryModule } from 'cv-library';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFontAwesomeModule,
 
     CvLibraryModule
   ],

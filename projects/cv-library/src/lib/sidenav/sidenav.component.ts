@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+
 
 @Component({
   selector: 'cv-sidenav',
@@ -6,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent implements OnInit {
-  public testNum : Number;
+  @Input()
+  header: String = '';
+
+  @Input()
+  width: String = '';
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this)
   }
 
 }
